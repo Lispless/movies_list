@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>
+	<%= @movies[:title] %>
+</title>
+	<head>
+	</head>
+	<h1>
+		<%= @movies[:title] %>
+	</h1>
+	<body>
+		<h3>About "<%= @movies[:title] %>"
+		</h3>
+		<ul>
+			<li>
+				<h2>
+					Title -
+				</h2>
+				<%= @movies[:title] %>
+			</li>
+			<li>
+				<h2>
+					Release year -
+				</h2>
+				<%= @movies[:year] %>
+			</li>
+			<li>
+				<h2>
+					Synopsis -
+				</h2>
+				<%= @movies[:synopsis] %>
+			</li>
+			<li>
+				<h2>
+					Rating - 
+				</h2>
+				<%= @movies[:rating] %>
+			</li>
+			<li>
+				<h2>
+					Genre -
+				</h2>
+				<%= @movies[:genre] %>
+			</li>
+			<li>
+				<h2>
+					Production studio -
+				</h2>
+				<%= @movies[:studio] %>
+			</li>
+		</ul>
+		<span>
+			<a href=" <%= "/movies" %> ">Back to movie list!</a>
+		</span>
+	</body>
+</html>

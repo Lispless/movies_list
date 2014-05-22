@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<title>
+	Movie Index
+</title>
+	<head>
+		<h1>
+		Movie List
+	</h1>
+	</head>
+	<body>
+		<ul>
+			<% @movies.each do |movie| %>
+			<li>
+				<a href=" <%= "/movies/#{movie[:title]}" %> "> <%= movie[:title] %> </a>
+			</li>
+				<% end %>
+		</ul>
+	</body>
+</html>
